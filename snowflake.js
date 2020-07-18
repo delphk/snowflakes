@@ -2,7 +2,7 @@ class Snowflake {
   constructor(radius, angle) {
     this.pos = p5.Vector.fromAngle(angle);
     this.pos.mult(radius);
-    this.r = 3;
+    this.r = width === 600 ? 3 : 2;
   }
 
   update() {
